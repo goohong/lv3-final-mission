@@ -30,8 +30,3 @@ management:
     web:
       exposure:
         include: health
-  metrics:
-    export:
-      cloudwatch:
-        namespace: "DannyLocal"
-        step: "1m"
