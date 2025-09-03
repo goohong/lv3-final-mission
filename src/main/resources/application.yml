@@ -2,9 +2,10 @@ spring:
   application:
     name: lv3-final-mission
   datasource:
-    url: ${DATASOURCE_URL}
-    username: ${DATASOURCE_USERNAME}
-    password: ${DATASOURCE_PASSWORD}
+    url: jdbc:mysql://danny-dev.cqsc6pyqhwww.ap-northeast-2.rds.amazonaws.com:3306/danny-dev?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: admin
+    password: adminadmin
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
     properties:
