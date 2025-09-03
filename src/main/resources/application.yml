@@ -24,3 +24,14 @@ rest-client:
   read-timeout: 35000
 
 randommer-secret-key: 89627a4a47fb446c881d2b346ba7f588
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  metrics:
+    export:
+      cloudwatch:
+        namespace: "DannyLocal"
+        step: "1m"
