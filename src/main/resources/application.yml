@@ -1,10 +1,6 @@
 spring:
   application:
     name: lv3-final-mission
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
   datasource:
     url: ${DATASOURCE_URL}
     username: ${DATASOURCE_USERNAME}
@@ -17,12 +13,14 @@ spring:
     hibernate:
       ddl-auto: create-drop
     defer-datasource-initialization: false
+
 jwt:
   secret: Yn2kjibddFAWtnPJ2AFlL8WXmohJMCvigQggaEypa5E=
   token:
     expiration-time: 3600000
+
 rest-client:
   connection-timeout: 5000
   read-timeout: 35000
+
 randommer-secret-key: 89627a4a47fb446c881d2b346ba7f588
-randommer-base-url: https://randommer.io/api

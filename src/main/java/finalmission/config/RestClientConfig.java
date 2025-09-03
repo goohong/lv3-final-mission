@@ -8,8 +8,6 @@ import org.springframework.web.client.RestClient;
 
 @Configuration
 public class RestClientConfig {
-    @Value("${randommer-base-url}")
-    private String baseUrl;
     @Value("${rest-client.connection-timeout}")
     private int connectTimeoutThreshold;
     @Value("${rest-client.read-timeout}")
@@ -23,6 +21,6 @@ public class RestClientConfig {
 
         return RestClient.builder()
                 .requestFactory(clientFactory)
-                .baseUrl(baseUrl);
+                .baseUrl("https://randommer.io/api");
     }
 }
